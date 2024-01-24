@@ -42,27 +42,24 @@
       }
     </style>
   </head>
-  <body class="font-manrope">
+  <body class="font-manrope sm:m-0 m-px">
     <header>
-      <nav class="container mx-auto lg:px-24 px-8">
+      <nav class="container sm:w-full mx-auto lg:px-24 px-8">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
-            <!-- <div class="dropdown">
+            <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
                 </ul>
-              </div> -->
+              </div>
             <a class="btn btn-ghost text-3xl font-extrabold gap-0"
               >Hockey<span class="text-[#FF4240]">’</span>s</a
             >
@@ -79,7 +76,7 @@
           <div class="navbar-end gap-6">
             <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
             <svg
-              class="stroke-1 hover:stroke-2"
+              class="stroke-1 hover:stroke-2 hidden"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -108,10 +105,15 @@
                 </clipPath>
               </defs>
             </svg>
-            <a
+            <!-- <a
               class="btn bg-[#FF4240] rounded-xl text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg"
               >Button</a
-            >
+            > -->
+            <a href="#"
+               class="bg-secondary border-secondary border rounded-full inline-flex items-center justify-center py-3 px-7 text-center text-base font-medium text-white hover:bg-[#0BB489] hover:border-[#0BB489] bg-[#FF4240] border-none disabled:text-dark-5">
+             Get Ticket
+            </a>
+
           </div>
         </div>
       </nav>
@@ -156,6 +158,11 @@
             </div>
           </div>
         </div>
+        <div class="sm:w-full sm:translate-y-20 md:w-2/4 lg:w-2/4 mx-auto bg-black rounded-lg lg:-translate-y-24 text-white text-center p-4">
+            <h2 class="text-lg sm:text-2xl font-extrabold">Meet all the heroes from the field</h2>
+            <p class="text-sm sm:text-base font-medium text-[#FFFFFF99] mt-3">Unveiling the Champions: Meet the Heroes of the Field. A Showcase of Talent, Passion, and Unyielding Dedication on Every Play.</p>
+
+        </div>
       </div>
     </header>
     <main>
@@ -164,7 +171,7 @@
         <hr class="container my-10 mx-auto lg:px-24 px-8" />
 
         <div class="text-center">
-          <h2 class="text-center text-4xl font-extrabold">
+          <h2 class="text-center text-2xl  lg:text-4xl font-extrabold">
             Professional Hockeys Club
           </h2>
           <p class="w-[35rem] mx-auto my-2 text-base">
@@ -176,7 +183,7 @@
 
         <hr class="container my-10 mx-auto lg:px-24 px-8" />
 
-        <div class="flex justify-around my-10 mx-auto lg:px-24 px-8">
+        <div class="flex flex-col items-center justify-around gap-4 my-10 mx-auto lg:px-24 px-8 sm:flex-row sm:justify-around">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -324,8 +331,8 @@
       <section>
         <hr class="container my-10 mx-auto lg:px-24 px-8" />
         <div>
-          <h2 class="text-center text-4xl font-extrabold">Program Sections</h2>
-          <p class="w-[35rem] mx-auto my-2 text-base">
+          <h2 class="text-center text-2xl  lg:text-4xl font-extrabold">Program Sections</h2>
+          <p class="w-[35rem] mx-auto my-2 text-sm lg:text-base">
             Structured Brilliance: Explore Our Program Sections for Tailored
             Learning. Elevate Your Experience with Specialized Tracks and
             Comprehensive Curriculum.
@@ -334,8 +341,8 @@
 
         <hr class="container my-10 mx-auto lg:px-24 px-8" />
 
-        <div class="flex flex-col items-center gap-6">
-          <div class="flex justify-around gap-6">
+        <div class="flex flex-col justify-center items-center gap-6">
+          <div class="flex sm:flex-row flex-col gap-6">
             <div
               class="text-white pt-28 pl-10 rounded-xl bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(/Images/2.png)] w-[35rem] h-[21rem]"
             >
@@ -367,7 +374,7 @@
             </div>
           </div>
           <div
-            class="text-white pt-52 pl-10 rounded-xl bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(/Images/4.png)] w-[73.125rem] h-[28.125rem]"
+            class="text-white pt-52 pl-10 rounded-xl bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(/Images/4.png)] lg:w-[73.125rem] h-[28.125rem]"
           >
             <h3 class="text-2xl font-extrabold m-3">Professional Program</h3>
             <p class="text-base font-medium m-3 w-[30rem] h-[4.8rem]">
@@ -386,7 +393,10 @@
 
       <!---------------------------- Our New Products --------------------------->
 
-      <section>
+      <section class="mt-5">
+
+        <hr class="container my-10 mx-auto lg:px-24 px-8" />
+
         <div>
           <h2 class="text-center text-4xl font-extrabold">Our New Products</h2>
           <p class="w-[35rem] mx-auto my-2 text-base">
@@ -396,13 +406,834 @@
             and functionality.
           </p>
         </div>
-        <div>
+
+        <hr class="container my-10 mx-auto lg:px-24 px-8" />
+
+        <div class="flex flex-col justify-evenly lg:grid grid-cols-2 gap-6 mt-4 mx-auto lg:px-28 px-8">
+          <div
+            class="flex items-center justify-around rounded-lg w-[35rem] h-56 bg-lime-100"
+          >
             <div>
-                
+              <img src="/Images/5.png" alt="" />
             </div>
+            <div>
+              <div class="flex gap-3">
+                <div>
+                  <span class="ratings text-yellow-500 mb-2">★</span>5.0
+                </div>
+                <div class="flex">
+                  <img src="/Images/eye.png" alt="" />
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <img src="/Images/heart.png" alt="" />
+                  <p>200</p>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-extrabold w-60 h-7">
+                  World Cup Flags Footbal
+                </h3>
+                <p class="text-base font-medium w-72 h-12">
+                  "Show your global football spirit with our World Cup Flags
+                  Football a perfect blend of style and sports fandom."
+                </p>
+              </div>
+              <div class="flex gap-3 mt-7">
+                <p class="text-[#FF4240]">Price - $22.00</p>
+                <div class="flex">
+                  <img src="/Images/shop.png" alt="" />
+                  <p>Delivery Fee : Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-around rounded-lg w-[35rem] h-56 bg-lime-100"
+          >
+            <div>
+              <img src="/Images/6.png" alt="" />
+            </div>
+            <div>
+              <div class="flex gap-3">
+                <div>
+                  <span class="ratings text-yellow-500 mb-2">★</span>5.0
+                </div>
+                <div class="flex">
+                  <img src="/Images/eye.png" alt="" />
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <img src="/Images/heart.png" alt="" />
+                  <p>200</p>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-extrabold w-60 h-7">
+                  World Cup Flags Footbal
+                </h3>
+                <p class="text-base font-medium w-72 h-12">
+                  "Show your global football spirit with our World Cup Flags
+                  Football a perfect blend of style and sports fandom."
+                </p>
+              </div>
+              <div class="flex gap-3 mt-7">
+                <p class="text-[#FF4240]">Price - $22.00</p>
+                <div class="flex">
+                  <img src="/Images/shop.png" alt="" />
+                  <p>Delivery Fee : Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-around rounded-lg w-[35rem] h-56 bg-lime-100"
+          >
+            <div>
+              <img src="/Images/7.png" alt="" />
+            </div>
+            <div>
+              <div class="flex gap-3">
+                <div>
+                  <span class="ratings text-yellow-500 mb-2">★</span>5.0
+                </div>
+                <div class="flex">
+                  <img src="/Images/eye.png" alt="" />
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <img src="/Images/heart.png" alt="" />
+                  <p>200</p>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-extrabold w-60 h-7">
+                  World Cup Flags Footbal
+                </h3>
+                <p class="text-base font-medium w-72 h-12">
+                  "Show your global football spirit with our World Cup Flags
+                  Football a perfect blend of style and sports fandom."
+                </p>
+              </div>
+              <div class="flex gap-3 mt-7">
+                <p class="text-[#FF4240]">Price - $22.00</p>
+                <div class="flex">
+                  <img src="/Images/shop.png" alt="" />
+                  <p>Delivery Fee : Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-around rounded-lg w-[35rem] h-56 bg-lime-100"
+          >
+            <div>
+              <img src="/Images/8.png" alt="" />
+            </div>
+            <div>
+              <div class="flex gap-3">
+                <div>
+                  <span class="ratings text-yellow-500 mb-2">★</span>5.0
+                </div>
+                <div class="flex">
+                  <img src="/Images/eye.png" alt="" />
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <img src="/Images/heart.png" alt="" />
+                  <p>200</p>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-extrabold w-60 h-7">
+                  World Cup Flags Footbal
+                </h3>
+                <p class="text-base font-medium w-72 h-12">
+                  "Show your global football spirit with our World Cup Flags
+                  Football a perfect blend of style and sports fandom."
+                </p>
+              </div>
+              <div class="flex gap-3 mt-7">
+                <p class="text-[#FF4240]">Price - $22.00</p>
+                <div class="flex">
+                  <img src="/Images/shop.png" alt="" />
+                  <p>Delivery Fee : Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-around rounded-lg w-[35rem] h-56 bg-lime-100"
+          >
+            <div>
+              <img src="/Images/9.png" alt="" />
+            </div>
+            <div>
+              <div class="flex gap-3">
+                <div>
+                  <span class="ratings text-yellow-500 mb-2">★</span>5.0
+                </div>
+                <div class="flex">
+                  <img src="/Images/eye.png" alt="" />
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <img src="/Images/heart.png" alt="" />
+                  <p>200</p>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-extrabold w-60 h-7">
+                  World Cup Flags Footbal
+                </h3>
+                <p class="text-base font-medium w-72 h-12">
+                  "Show your global football spirit with our World Cup Flags
+                  Football a perfect blend of style and sports fandom."
+                </p>
+              </div>
+              <div class="flex gap-3 mt-7">
+                <p class="text-[#FF4240]">Price - $22.00</p>
+                <div class="flex">
+                  <img src="/Images/shop.png" alt="" />
+                  <p>Delivery Fee : Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-around rounded-lg w-[35rem] h-56 bg-lime-100"
+          >
+            <div>
+              <img src="/Images/10.png" alt="" />
+            </div>
+            <div>
+              <div class="flex gap-3">
+                <div>
+                  <span class="ratings text-yellow-500 mb-2">★</span>5.0
+                </div>
+                <div class="flex">
+                  <img src="/Images/eye.png" alt="" />
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <img src="/Images/heart.png" alt="" />
+                  <p>200</p>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-extrabold w-60 h-7">
+                  World Cup Flags Footbal
+                </h3>
+                <p class="text-base font-medium w-72 h-12">
+                  "Show your global football spirit with our World Cup Flags
+                  Football a perfect blend of style and sports fandom."
+                </p>
+              </div>
+              <div class="flex gap-3 mt-7">
+                <p class="text-[#FF4240]">Price - $22.00</p>
+                <div class="flex">
+                  <img src="/Images/shop.png" alt="" />
+                  <p>Delivery Fee : Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      <!----------------------- Clients Question------------------>
+
+      <section>
+
+        <hr class="container my-10 mx-auto lg:px-24 px-8" />
+
+        <div>
+          <h2 class="text-center text-4xl font-extrabold">Clients Question</h2>
+          <p class="w-[35rem] mx-auto my-2 text-base">
+            Client Queries Resolved: Navigating Through Clients' Questions for
+            Informed Decisions and Seamless Solutions.
+          </p>
+        </div>
+
+        <hr class="container my-10 mx-auto lg:px-24 px-8" />
+
+        <div class="flex flex-col items-center lg:flex-row justify-around">
+          <div>
+            <img src="/Images/11.png" alt="" />
+          </div>
+          <div class="w-1/2">
+            <div class="collapse collapse-plus bg-white">
+                <input type="radio" name="my-accordion-3" checked="checked"/> 
+                <div class="collapse-title text-2xl font-semibold">
+                    Our Equipment
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-white">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-2xl font-semibold">
+                    Hockey Training
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-white">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-2xl font-semibold">
+                    Private Lessons
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-white">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-2xl font-semibold">
+                    Ski Touring
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-white">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-2xl font-semibold">
+                    Booking
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-white">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-2xl font-semibold">
+                    Pricings
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!--------------------Get In Touch----------------------------------------->
+
+      <section>
+
+        <hr class="container my-10 mx-auto lg:px-24 px-8" />
+
+        <div>
+          <h2 class="text-center text-2xl  lg:text-4xl font-extrabold">Get In Touch</h2>
+          <p class="w-[35rem] mx-auto my-2 text-base">
+            Stay Connected: 'Get In Touch' for Inquiries, Collaborations, and
+            Seamless Communication. Your Pathway to Engaging Conversations and
+            Lasting Partnerships.
+          </p>
+        </div>
+
+        <hr class="container my-10 mx-auto lg:px-24 px-8" />
+
+        <div class="flex justify-center sm:flex-row flex-col">
+          <div
+            class="w-[29.5rem] h-[47.75rem] bg-[#fff] flex flex-col gap-5 p-12"
+          >
+            <div class="w-[23rem] h-56 bg-red-100 rounded-xl">
+              <img
+                class="pt-12 pl-10"
+                src="/Images/Group 1171275317.png"
+                alt=""
+              />
+              <div class="w-72 h-16 pt-10 pl-10">
+                <h4 class="text-base font-normal">Phone Number :</h4>
+                <p class="text-lg font-extrabold">(+62) 123-321-543</p>
+              </div>
+            </div>
+            <div class="w-[23rem] h-56 bg-orange-100 rounded-xl">
+              <img
+                class="pt-12 pl-10"
+                src="/Images/Group 1171275318.png"
+                alt=""
+              />
+              <div class="w-72 h-16 pt-10 pl-10">
+                <h4 class="text-base font-normal">Email :</h4>
+                <p class="text-lg font-extrabold">hockeys@support.com</p>
+              </div>
+            </div>
+            <div class="w-[23rem] h-56 bg-fuchsia-100 rounded-xl">
+              <img
+                class="pt-12 pl-10"
+                src="/Images/Group 1171275321.png"
+                alt=""
+              />
+              <div class="w-72 h-16 pt-6 pl-10">
+                <h4 class="text-base font-normal">Location :</h4>
+                <p class="text-lg font-extrabold">
+                  152/1 Mohakhali Wireless Gate
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="max-w-screen-lg mx-auto p-5">
+            <div class="grid grid-cols-1 md:grid-cols-12 border">
+   
+                <form class="md:col-span-8 p-10">
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-first-name">
+                                First Name
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                                id="grid-first-name" type="text" placeholder="Your name">
+                            <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                        </div>
+                        <div class="w-full md:w-1/2 px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-last-name">
+                                Last Name
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="grid-last-name" type="text" placeholder="your name">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-password">
+                                Phone Number
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="grid-number" type="text" placeholder="your number">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-password">
+                                Email Address
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="grid-email" type="email" placeholder="********@*****.**">
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-password">
+                                Your Message
+                            </label>
+                            <textarea rows="10"
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
+                        </div>
+                        <div class="flex justify-between w-full px-3">
+                            <div class="md:flex md:items-center">
+                                <label class="block text-gray-500 font-bold">
+                                    <input class="mr-2 leading-tight" type="checkbox">
+                                    <span class="text-sm">
+                                        Send me your newsletter!
+                                    </span>
+                                </label>
+                            </div>
+                            <button
+                                class="shadow bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
+                                type="submit">
+                                Send Message
+                            </button>
+                        </div>
+        
+                    </div>
+        
+                </form>
+        
+            </div>
+        </div>
+
+
+
+
+         <!-- <div  class="lg:w-[29.5rem] mx-auto mt-12 sm:mt-20">
+            <form class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+              <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                <div>
+                  <label
+                    for="first-name"
+                    class="block text-xl font-bold leading-6 text-[#131318]"
+                    >First name</label
+                  >
+                  <div class="mt-2.5 w-80 h-16">
+                    <input
+                      required=""
+                      type="text"
+                      name="first-name"
+                      id="first-name"
+                      autocomplete="given-name"
+                      placeholder="Your First Name"
+                      class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label
+                    for="last-name"
+                    class="block text-xl font-bold leading-6 text-[#131318]"
+                    >Last name</label
+                  >
+                  <div class="mt-2.5 w-80 h-16">
+                    <input
+                      required=""
+                      type="text"
+                      name="last-name"
+                      id="last-name"
+                      autocomplete="family-name"
+                      placeholder="Your Last Name"
+                      class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <label
+                    for="email"
+                    class="block text-xl font-bold leading-6 text-[#131318]"
+                    >Email</label
+                  >
+                  <div class="mt-2.5 h-16">
+                    <input
+                      required=""
+                      type="email"
+                      name="email"
+                      id="email"
+                      autocomplete="email"
+                      placeholder="Your Email Address"
+                      class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <label
+                    for="phone"
+                    class="block text-xl font-bold leading-6 text-[#131318]"
+                    >Phone number</label
+                  >
+                  <div class="mt-2.5 h-16">
+                    <input
+                      required=""
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      autocomplete="tel"
+                      placeholder="Your Phone Number"
+                      class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <label
+                    for="message"
+                    class="block text-xl font-bold leading-6 text-[#131318]"
+                    >Message</label
+                  >
+                  <div class="mt-2.5">
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows="10"
+                      placeholder="Share your message..."
+                      class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-10">
+                <button
+                  type="submit"
+                  class="bg-[#FF4240] text-white text-xl font-bold rounded-xl py-2 w-full block"
+                >
+                  Submit →
+                </button>
+              </div>
+            </form>
+          </div> -->
+        </div>
+      </section>
+      <section
+        class="container mx-auto lg:px-24 px-8 h-36 bg-[#13131808] flex flex-col justify-center items-center gap-5 rounded-xl m-10">
+        <h3 class="text-2xl font-extrabold">Social Media</h3>
+        <img src="/Images/Social.png" alt="" />
+      </section>
     </main>
-    <footer></footer>
+
+    <!-- ====== Footer Section Start -->
+    <!-- <footer class="relative z-10 bg-[#131318] text-white pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+      <div class="container mx-auto flex flex-wrap gap-4">
+        <div class="flex flex-col mx-24">
+          <div class="w-full px-4 sm:w-2/3 lg:w-3/12">
+            <div class="w-full mb-10">
+              <h2 class="text-3xl font-extrabold ">Get In Touch</h2>
+              <p class="text-base text-body-color dark:text-dark-6 mt-5 mb-7">
+                Connect With Us: Explore Our 'Get In Touch' Section. Reach Out
+                for Inquiries, Collaborations, and Seamless Communication.
+              </p>
+              <p
+                class="flex items-center text-sm font-medium text-dark dark:text-white mt-5"
+              >
+                <span class="mr-3 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21.75 6.75V17.25C21.75 17.8467 21.5129 18.419 21.091 18.841C20.669 19.2629 20.0967 19.5 19.5 19.5H4.5C3.90326 19.5 3.33097 19.2629 2.90901 18.841C2.48705 18.419 2.25 17.8467 2.25 17.25V6.75M21.75 6.75C21.75 6.15326 21.5129 5.58097 21.091 5.15901C20.669 4.73705 20.0967 4.5 19.5 4.5H4.5C3.90326 4.5 3.33097 4.73705 2.90901 5.15901C2.48705 5.58097 2.25 6.15326 2.25 6.75M21.75 6.75V6.993C21.75 7.37715 21.6517 7.75491 21.4644 8.0903C21.2771 8.42569 21.0071 8.70754 20.68 8.909L13.18 13.524C12.8252 13.7425 12.4167 13.8582 12 13.8582C11.5833 13.8582 11.1748 13.7425 10.82 13.524L3.32 8.91C2.99292 8.70854 2.72287 8.42669 2.53557 8.0913C2.34827 7.75591 2.24996 7.37815 2.25 6.994V6.75" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </span>
+                <span>hockeys@support.com</span>
+              </p>
+              <p
+                class="flex items-center text-sm font-medium text-dark dark:text-white mt-5"
+              >
+                <span class="mr-3 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M2.25 6.75C2.25 15.034 8.966 21.75 17.25 21.75H19.5C20.0967 21.75 20.669 21.5129 21.091 21.091C21.5129 20.669 21.75 20.0967 21.75 19.5V18.128C21.75 17.612 21.399 17.162 20.898 17.037L16.475 15.931C16.035 15.821 15.573 15.986 15.302 16.348L14.332 17.641C14.05 18.017 13.563 18.183 13.122 18.021C11.4849 17.4191 9.99815 16.4686 8.76478 15.2352C7.53141 14.0018 6.58087 12.5151 5.979 10.878C5.817 10.437 5.983 9.95 6.359 9.668L7.652 8.698C8.015 8.427 8.179 7.964 8.069 7.525L6.963 3.102C6.90214 2.85869 6.76172 2.6427 6.56405 2.48834C6.36638 2.33397 6.1228 2.25008 5.872 2.25H4.5C3.90326 2.25 3.33097 2.48705 2.90901 2.90901C2.48705 3.33097 2.25 3.90326 2.25 4.5V6.75Z" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </span>
+                <span>+012 (345) 678 99</span>
+              </p>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+            <div class="w-full mb-10">
+              <h4 class="text-lg font-semibold text-dark dark:text-white mb-9">
+                Company
+              </h4>
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                  >
+                  About us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                  >
+                  Leadership
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                  >
+                  Careers
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                  >
+                  News & Article
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+            <div class="w-full mb-10">
+              <h4 class="text-lg font-semibold text-dark dark:text-white mb-9">
+                Support
+              </h4>
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                  >
+                  Help Center 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                  >
+                  FAQ
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                  >  
+                  Ticket Support
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                  >
+                  Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+            <div class="w-full mb-10">
+              <h4 class="text-lg font-semibold text-dark dark:text-white mb-9">
+                Services
+              </h4>
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                  >
+                  Academy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                  >
+                  Group Lesson
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                  >
+                  Private Lesson
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                  >
+                  Hockeys for kids
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                  >
+                  Hockeys for Adult
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+        <hr class="container my-10 mx-auto lg:px-24 px-8 text-white" />
+
+        <p class="text-center m-auto">Copyright © 2024</p>
+    </footer> -->
+    
+    
+    <footer class="font-sans bg-[#213343] py-8 px-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <h4 class="text-[#FFA726] text-3xl font-extrabold">Get In Touch</h4>
+            <p class="text-base text-body-color text-gray-300 mt-5 mb-7">
+                Connect With Us: Explore Our 'Get In Touch' Section. Reach Out
+                for Inquiries, Collaborations, and Seamless Communication.
+              </p>
+              <p
+                class="flex items-center text-sm font-medium text-dark dark:text-white mt-5"
+              >
+                <span class="mr-3 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21.75 6.75V17.25C21.75 17.8467 21.5129 18.419 21.091 18.841C20.669 19.2629 20.0967 19.5 19.5 19.5H4.5C3.90326 19.5 3.33097 19.2629 2.90901 18.841C2.48705 18.419 2.25 17.8467 2.25 17.25V6.75M21.75 6.75C21.75 6.15326 21.5129 5.58097 21.091 5.15901C20.669 4.73705 20.0967 4.5 19.5 4.5H4.5C3.90326 4.5 3.33097 4.73705 2.90901 5.15901C2.48705 5.58097 2.25 6.15326 2.25 6.75M21.75 6.75V6.993C21.75 7.37715 21.6517 7.75491 21.4644 8.0903C21.2771 8.42569 21.0071 8.70754 20.68 8.909L13.18 13.524C12.8252 13.7425 12.4167 13.8582 12 13.8582C11.5833 13.8582 11.1748 13.7425 10.82 13.524L3.32 8.91C2.99292 8.70854 2.72287 8.42669 2.53557 8.0913C2.34827 7.75591 2.24996 7.37815 2.25 6.994V6.75" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </span>
+                <span>hockeys@support.com</span>
+              </p>
+              <p
+                class="flex items-center text-sm font-medium text-dark dark:text-white mt-5"
+              >
+                <span class="mr-3 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M2.25 6.75C2.25 15.034 8.966 21.75 17.25 21.75H19.5C20.0967 21.75 20.669 21.5129 21.091 21.091C21.5129 20.669 21.75 20.0967 21.75 19.5V18.128C21.75 17.612 21.399 17.162 20.898 17.037L16.475 15.931C16.035 15.821 15.573 15.986 15.302 16.348L14.332 17.641C14.05 18.017 13.563 18.183 13.122 18.021C11.4849 17.4191 9.99815 16.4686 8.76478 15.2352C7.53141 14.0018 6.58087 12.5151 5.979 10.878C5.817 10.437 5.983 9.95 6.359 9.668L7.652 8.698C8.015 8.427 8.179 7.964 8.069 7.525L6.963 3.102C6.90214 2.85869 6.76172 2.6427 6.56405 2.48834C6.36638 2.33397 6.1228 2.25008 5.872 2.25H4.5C3.90326 2.25 3.33097 2.48705 2.90901 2.90901C2.48705 3.33097 2.25 3.90326 2.25 4.5V6.75Z" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </span>
+                <span>+012 (345) 678 99</span>
+              </p>
+           
+          </div>
+          <div>
+            <h4 class="text-[#FFA726] font-bold text-lg mb-5">Services</h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="javascript:void(0)" class="hover:text-[#FFA726] text-gray-300 text-[15px] font-semibold transition-all">Academy</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="hover:text-[#FFA726] text-gray-300 text-[15px] font-semibold transition-all">Group lesson</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="hover:text-[#FFA726] text-gray-300 text-[15px] font-semibold transition-all">Private lesson</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="hover:text-[#FFA726] text-gray-300 text-[15px] font-semibold transition-all">Hockey for kids</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-[#FFA726] font-bold text-lg mb-5">Support</h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="javascript:void(0)" class="hover:text-[#FFA726] text-gray-300 text-[15px] font-semibold transition-all">Help center</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="hover:text-[#FFA726] text-gray-300 text-[15px] font-semibold transition-all">FAQ</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="hover:text-[#FFA726] text-gray-300 text-[15px] font-semibold transition-all">Ticket support</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="hover:text-[#FFA726] text-gray-300 text-[15px] font-semibold transition-all">Contact US</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-[#FFA726] font-bold text-lg mb-5">Company</h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="javascript:void(0)" class="hover:text-[#FFA726] text-gray-300 text-[15px] font-semibold transition-all">Leadership</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="hover:text-[#FFA726] text-gray-300 text-[15px] font-semibold transition-all">About US</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="hover:text-[#FFA726] text-gray-300 text-[15px] font-semibold transition-all">Career</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="hover:text-[#FFA726] text-gray-300 text-[15px] font-semibold transition-all">Learn more</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t text-center border-[#6b5f5f] pt-8 mt-8">
+          <p class="text-gray-300 text-[15px] font-semibold">
+            Copyright © 2023
+            <a href="https://readymadeui.com/" target="_blank" class="hover:underline mx-1">ReadymadeUI</a>
+            All Rights Reserved.
+          </p>
+        </div>
+      </footer>
+    
+    <!-- ====== Footer Section End -->
   </body>
 </html>
